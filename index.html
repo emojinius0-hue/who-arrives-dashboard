@@ -1,0 +1,57 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>مين يوصل؟ | لوحة الأداء</title><style>
+:root{--bg:#f9f9f7;--surface:#fcfcfb;--ink:#0b0b0b;--ink2:#52514e;--muted:#898781;--grid:#e1e0d9;--base:#c3c2b7;
+--border:rgba(11,11,11,.10);--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])){--bg:#0d0d0d;--surface:#1a1a19;--ink:#f0efec;
+--ink2:#c3c2b7;--grid:#2c2c2a;--base:#383835;--border:rgba(255,255,255,.10);--s1:#3987e5;--s2:#d95926;--s3:#199e70}}
+:root[data-theme="dark"]{--bg:#0d0d0d;--surface:#1a1a19;--ink:#f0efec;--ink2:#c3c2b7;--grid:#2c2c2a;--base:#383835;
+--border:rgba(255,255,255,.10);--s1:#3987e5;--s2:#d95926;--s3:#199e70}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;line-height:1.5}
+.wrap{max-width:1040px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:22px;margin:0}h2{font-size:16px;margin:0 0 14px}
+.sub{color:var(--ink2);font-size:13px;margin-top:4px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px;margin-top:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.grid .card{margin-top:16px}
+.hero{display:flex;flex-wrap:wrap;gap:24px 40px;align-items:flex-end}
+.hero .big{font-size:56px;font-weight:700;line-height:1}
+.lbl{color:var(--ink2);font-size:13px;margin-bottom:6px}
+.tile .v{font-size:28px;font-weight:600;line-height:1.1}
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:14px;font-size:13px;color:var(--ink2)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-inline-end:6px;vertical-align:-1px}
+.hrow{display:grid;grid-template-columns:128px 1fr;align-items:center;gap:12px;margin:10px 0}
+.hl{font-size:13px;color:var(--ink2)}
+.htrack{display:flex;gap:2px;height:20px;align-items:center}
+.seg{display:block;height:20px;min-width:3px}.seg.last{border-radius:4px 0 0 4px}
+.hv{font-size:13px;margin-inline-start:8px;color:var(--ink)}
+.cols{display:flex;gap:6px;height:230px;border-bottom:1px solid var(--base)}
+.col{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;min-width:0}
+.cstack{display:flex;flex-direction:column-reverse;gap:2px;width:100%;max-width:24px;height:calc(100% - 4px);justify-content:flex-start}
+.cseg{display:block;width:100%}.cseg.top{border-radius:4px 4px 0 0}
+.cl{position:absolute}
+.labels{display:flex;gap:6px;margin-top:6px}.labels span{flex:1;text-align:center;font-size:11px;color:var(--muted);min-width:0}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{color:var(--ink2);font-weight:500;text-align:start;padding:6px 8px;border-bottom:1px solid var(--base)}
+td{padding:7px 8px;border-bottom:1px solid var(--grid);font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+.empty{color:var(--ink2);padding:28px 0;text-align:center}
+.ch{display:flex;flex-wrap:wrap;gap:16px}.ch .tile{flex:1;min-width:170px}
+.tip{position:absolute;display:none;z-index:9;background:var(--ink);color:var(--bg);border-radius:8px;padding:6px 10px;
+font-size:12px;pointer-events:none;white-space:nowrap}.tip b{font-size:14px;margin-inline-end:6px}
+[data-tip]{cursor:default}[data-tip]:hover,[data-tip]:focus{filter:brightness(1.12);outline:none}
+.note{color:var(--ink2);font-size:13px;margin:-8px 0 14px}
+.bd{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--ink2);margin-top:3px}
+.bd i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-inline-end:4px}
+.hrow{align-items:start}.hrow .hl{padding-top:2px;color:var(--ink)}
+.cap{color:var(--muted);font-size:12px;margin-top:6px}
+@media (max-width:560px){.hero .big{font-size:44px}.hrow{grid-template-columns:100px 1fr}}
+</style></head><body><div class="wrap"><h1>مين يوصل؟ | Who Arrives: لوحة الأداء</h1><div class="sub">آخر تحديث 2026-10-20 00:11 (توقيت الرياض). الأرقام من Postiz وتتحدث يومياً.</div><div class="card"><div class="hero"><div><div class="lbl">إجمالي المشاهدات</div><div class="big">4</div><div class="cap">كل المنصات، كل الفيديوهات</div></div><div class="tile"><div class="lbl">فيديوهات منشورة</div><div class="v">1</div></div><div class="tile"><div class="lbl">إعجابات</div><div class="v">0</div></div><div class="tile"><div class="lbl">تعليقات</div><div class="v">0</div></div><div class="tile"><div class="lbl">نسبة التفاعل</div><div class="v">0.0%</div><div class="cap">(إعجابات + تعليقات + مشاركات) ÷ مشاهدات</div></div></div><div class="legend"><span><i style="background:var(--s1)"></i>إنستقرام</span><span><i style="background:var(--s2)"></i>يوتيوب</span><span><i style="background:var(--s3)"></i>تيك توك</span></div></div><div class="card"><h2>المشاهدات حسب المنصة</h2><div class="note">مجموع مشاهدات كل المنصات للفيديوهات المنشورة.</div><div class="hrow"><div class="hl">إنستقرام</div><div><div class="htrack"><span class="hv"><b>بانتظار الأرقام</b></span></div></div></div><div class="hrow"><div class="hl">يوتيوب</div><div><div class="htrack"><span class="seg last" style="width:82.00%;background:var(--s2)" tabindex="0" data-v="4" data-l="يوتيوب · يوتيوب"></span><span class="hv"><b>4</b></span></div></div></div><div class="hrow"><div class="hl">تيك توك</div><div><div class="htrack"><span class="hv"><b>بانتظار الأرقام</b></span></div></div></div></div><div class="card"><h2>آخر 1 فيديو</h2><div class="note">مشاهدات كل فيديو، مقسومة على المنصات. الرقم الغامق هو المجموع.</div><div class="hrow"><div class="hl">فيديو 01 · فواكه</div><div><div class="htrack"><span class="seg last" style="width:82.00%;background:var(--s2)" tabindex="0" data-v="4" data-l="فيديو 01 · فواكه · يوتيوب"></span><span class="hv"><b>4</b></span></div><div class="bd"><span><i style="background:var(--s2)"></i>يوتيوب: 4</span></div></div></div></div><div class="grid"><div class="card"><h2>حسب الفئة</h2><div class="note">أي فئة تجيب مشاهدات أكثر.</div><div class="hrow"><div class="hl">فواكه</div><div><div class="htrack"><span class="seg last" style="width:82.00%;background:var(--s2)" tabindex="0" data-v="4" data-l="فواكه · يوتيوب"></span><span class="hv"><b>4</b></span></div><div class="bd"><span><i style="background:var(--s2)"></i>يوتيوب: 4</span></div></div></div></div><div class="card"><h2>حسب تغيّرات الصدارة</h2><div class="note">هل السباق الأكثر تقلباً يشدّ الناس أكثر؟</div><div class="hrow"><div class="hl">متوسطة (4-5)</div><div><div class="htrack"><span class="seg last" style="width:82.00%;background:var(--s2)" tabindex="0" data-v="4" data-l="متوسطة (4-5) · يوتيوب"></span><span class="hv"><b>4</b></span></div><div class="bd"><span><i style="background:var(--s2)"></i>يوتيوب: 4</span></div></div></div></div></div><div class="card"><h2>القنوات</h2><div class="note">أرقام القناة كاملة آخر 30 يوم.</div><div class="ch"><div class="tile"><div class="lbl">إنستقرام</div><div class="v">0</div><div class="sub">مشاهدات القناة (30 يوم)</div></div><div class="tile"><div class="lbl">يوتيوب</div><div class="v">0</div><div class="sub">مشاهدات القناة (30 يوم)</div></div><div class="tile"><div class="lbl">تيك توك</div><div class="v">0</div><div class="sub">مشاهدات القناة (30 يوم)</div></div></div></div><div class="card"><h2>جدول آخر المنشورات</h2><div class="note">كل رقم مكتوب هنا بدون تحريك الماوس. الأحدث فوق.</div><div class="scroll"><table><thead><tr><th>الفيديو</th><th>الفئة</th><th>تغيّرات الصدارة</th><th>مشاهدات إنستقرام</th><th>مشاهدات يوتيوب</th><th>مشاهدات تيك توك</th><th>إعجابات</th><th>تعليقات</th></tr></thead><tbody><tr><td>01</td><td>فواكه</td><td>متوسطة (4-5)</td><td>0</td><td>4</td><td>0</td><td>0</td><td>0</td></tr></tbody></table></div></div></div><script>
+const tip=document.createElement('div');tip.className='tip';document.body.appendChild(tip);
+function show(e){const t=e.target.closest&&e.target.closest('[data-v]');if(!t){tip.style.display='none';return}
+tip.replaceChildren();const b=document.createElement('b');b.textContent=t.dataset.v;const s=document.createElement('span');
+s.textContent=t.dataset.l;tip.append(b,s);tip.style.display='block';const r=t.getBoundingClientRect();
+tip.style.left=Math.max(8,Math.min(innerWidth-tip.offsetWidth-8,r.left+scrollX+r.width/2-tip.offsetWidth/2))+'px';
+tip.style.top=(r.top+scrollY-tip.offsetHeight-8)+'px'}
+document.addEventListener('pointerover',show);document.addEventListener('focusin',show);
+document.addEventListener('pointerout',()=>{tip.style.display='none'});document.addEventListener('focusout',()=>{tip.style.display='none'});
+</script></body></html>
